@@ -4,14 +4,36 @@
              xmlns:local="clr-namespace:XamarinTests"
              x:Class="XamarinTests.MainPage">
 
-    <StackLayout>
+    <StackLayout Orientation="Vertical" Margin="30">
         <!-- Place new controls here -->
         <!--
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         -->
-        
+
+        <Button Text="Fill" 
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"/>
+        <Button Text="Center" HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        <Button Text="Start" HorizontalOptions="Start"
+                VerticalOptions="Start"/>
+        <Button Text="End" HorizontalOptions="End"
+                VerticalOptions="End"/>
+        <BoxView BackgroundColor="SeaGreen"
+                 HeightRequest="2"/>
+        <Label Text="Start" BackgroundColor="LightBlue" VerticalOptions="StartAndExpand"/>
+        <BoxView BackgroundColor="SeaGreen"
+                 HeightRequest="2"/>
+        <Label Text="Center" BackgroundColor="LightBlue" VerticalOptions="CenterAndExpand"/>
+        <BoxView BackgroundColor="SeaGreen"
+                 HeightRequest="2"/>
+        <Label Text="Fill" BackgroundColor="LightBlue" VerticalOptions="FillAndExpand"/>
+        <BoxView BackgroundColor="SeaGreen"
+                 HeightRequest="2"/>
+        <Label Text="End" BackgroundColor="LightBlue" VerticalOptions="EndAndExpand"/>
+
     </StackLayout>
 
 </ContentPage>
