@@ -4,14 +4,18 @@
              xmlns:local="clr-namespace:XamarinTests"
              x:Class="XamarinTests.MainPage">
 
-    <StackLayout Orientation="Vertical" Margin="30">
-        <!-- Place new controls here -->
-        <!--
+
+
+    <!-- <StackLayout BackgroundColor="White" Orientation="Horizontal" Spacing="0">
+    Orientation="Vertical" Margin="3"
+        Place new controls here -->
+        <!-- 
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         -->
 
+        <!-- Alignment y Expansion
         <Button Text="Fill" 
                 HorizontalOptions="Fill"
                 VerticalOptions="Fill"/>
@@ -21,6 +25,7 @@
                 VerticalOptions="Start"/>
         <Button Text="End" HorizontalOptions="End"
                 VerticalOptions="End"/>
+        
         <BoxView BackgroundColor="SeaGreen"
                  HeightRequest="2"/>
         <Label Text="Start" BackgroundColor="LightBlue" VerticalOptions="StartAndExpand"/>
@@ -33,7 +38,112 @@
         <BoxView BackgroundColor="SeaGreen"
                  HeightRequest="2"/>
         <Label Text="End" BackgroundColor="LightBlue" VerticalOptions="EndAndExpand"/>
+        -->
+
+        <!-- Margin y Padding
+        <StackLayout BackgroundColor="Green">
+            <Image Source="logo.png" Margin="25,50" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout BackgroundColor="Yellow" Padding="50">
+            <Image Source="logo.png" Margin="25,50,100,20" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    
+    </StackLayout>
+    
+        -->
+
+    <!-- StackLayout
+    <StackLayout BackgroundColor="White" Orientation="Horizontal" Spacing="0">
+        <BoxView BackgroundColor="SeaGreen"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+        <BoxView BackgroundColor="Red" 
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+        <BoxView BackgroundColor="Gold"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+        <BoxView BackgroundColor="BlueViolet" 
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+        
+    </StackLayout>
+    -->
+
+    <StackLayout Spacing="0"
+                 Padding="0"
+                 BackgroundColor="Maroon">
+        <BoxView HorizontalOptions="FillAndExpand"
+                 HeightRequest="100"
+                 VerticalOptions="Start"
+                 Color="Gray"/>
+        <Button BorderRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
+                BackgroundColor="Red"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+
+        <StackLayout HeightRequest="100"
+                     VerticalOptions="Start"
+                     HorizontalOptions="FillAndExpand"
+                     Spacing="20"
+                     BackgroundColor="Aquamarine">
+            <Label Text="User Name"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"/>
+            <Entry Text="Bio + Hashtags"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand">                
+            </Entry>      
+            
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="14"
+                   Text="Age: "
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="100"/>
+            <Entry Text="35"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand">
+            </Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="14"
+                   Text="Intereses: "
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="100"/>
+            <Entry Text="Xamarin.Forms"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand">
+            </Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="14"
+                   Text="Preguntame sobre: "
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="100"/>
+            <Entry Text="Node.js, Java, Xamarin, C#, HTML"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand">
+            </Entry>
+        </StackLayout>
 
     </StackLayout>
+    
 
 </ContentPage>
