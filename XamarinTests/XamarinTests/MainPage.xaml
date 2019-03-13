@@ -69,6 +69,7 @@
         
     </StackLayout>
     -->
+    <!--
 
     <StackLayout Spacing="0"
                  Padding="0"
@@ -144,6 +145,243 @@
         </StackLayout>
 
     </StackLayout>
-    
+    -->
+
+    <!--  
+    <AbsoluteLayout>
+        <Button Text="AbsoluteLayout"
+                AbsoluteLayout.LayoutFlags="None"
+                AbsoluteLayout.LayoutBounds="30,50,200,100">  x,y,width, weight             
+        </Button>
+        <Button Text="AbsoluteLayout"
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds=".5,.5,.5,.5">  x,y,width, weight en % 0..1
+        </Button>
+
+        <Button BorderRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
+                BackgroundColor="Red"
+                AbsoluteLayout.LayoutFlags="None"
+                AbsoluteLayout.LayoutBounds="10,100,60,60"/>
+
+    </AbsoluteLayout> -->
+    <!--
+    <RelativeLayout>
+       <Button Text="Botón"></Button> 
+        <BoxView x:Name="green"
+            Color="Green"
+            HeightRequest="200"
+            WidthRequest="200"
+            RelativeLayout.XConstraint="
+                 {  ConstraintExpression   
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=.5,
+                    Constant=-100
+                }"/>
+        <Label Text="Su nombre: "
+               x:Name="lblName"
+            RelativeLayout.YConstraint="
+                 {  ConstraintExpression   
+                    Type=RelativeToView,
+                    ElementName=green,
+                    Property=Height,
+                    Factor=1.5,
+                    Constant=0
+                }"     
+            />
+        <Entry Placeholder="Nombre"
+                RelativeLayout.XConstraint="
+                 {  ConstraintExpression   
+                    Type=RelativeToView,
+                    ElementName=lblName,
+                    Property=X,
+                    Factor=1,
+                    Constant=100
+                }"   
+                RelativeLayout.YConstraint="
+                 {  ConstraintExpression   
+                    Type=RelativeToView,
+                    ElementName=lblName,
+                    Property=Y,
+                    Factor=1,
+                    Constant=-15
+                }" 
+               RelativeLayout.WidthConstraint="
+               {  ConstraintExpression   
+                    Type=RelativeToParent,
+                    ElementName=lblName,
+                    Property=Width,
+                    Factor=1,
+                    Constant=0
+                }"    /> 
+       </RelativeLayout>
+   -->
+<!--
+    <Grid ColumnSpacing="5" RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Text="Botón Uno" Grid.ColumnSpan="2"></Button>
+        <Button Text="Botón Dos" Grid.Row="1"></Button>
+        <Button Text="Botón Tres" Grid.Column="1"></Button>
+        <Button Text="Botón Cuatro" Grid.Row="1" Grid.Column="1"></Button>
+    </Grid>
+-->
+
+    <ScrollView>
+
+        <StackLayout>
+
+        <StackLayout Spacing="0"
+                 Padding="0"
+                 BackgroundColor="Maroon">
+            <BoxView HorizontalOptions="FillAndExpand"
+                 HeightRequest="100"
+                 VerticalOptions="Start"
+                 Color="Gray"/>
+            <Button BorderRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
+                BackgroundColor="Red"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+
+            <StackLayout HeightRequest="100"
+                     VerticalOptions="Start"
+                     HorizontalOptions="FillAndExpand"
+                     Spacing="20"
+                     BackgroundColor="Aquamarine">
+                <Label Text="User Name"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"/>
+                <Entry Text="Bio + Hashtags"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand">
+                </Entry>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14"
+                   Text="Age: "
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="100"/>
+                <Entry Text="35"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14"
+                   Text="Intereses: "
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="100"/>
+                <Entry Text="Xamarin.Forms"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14"
+                   Text="Preguntame sobre: "
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   WidthRequest="100"/>
+                <Entry Text="Node.js, Java, Xamarin, C#, HTML"
+                   TextColor="White"
+                   BackgroundColor="Orange"
+                   HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="White" Orientation="Horizontal" Spacing="0">
+            <BoxView BackgroundColor="SeaGreen"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+            <BoxView BackgroundColor="Red" 
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+            <BoxView BackgroundColor="Gold"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+            <BoxView BackgroundColor="BlueViolet" 
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+
+
+            <AbsoluteLayout>
+                <Button Text="AbsoluteLayout"
+                AbsoluteLayout.LayoutFlags="None"
+                AbsoluteLayout.LayoutBounds="30,50,200,100">x,y,width, weight
+                </Button>
+                <Button Text="AbsoluteLayout"
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds=".5,.5,.5,.5">x,y,width, weight en % 0..1
+                </Button>
+                <Button BorderRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
+                BackgroundColor="Red"
+                AbsoluteLayout.LayoutFlags="None"
+                AbsoluteLayout.LayoutBounds="10,100,60,60"/>
+            </AbsoluteLayout>
+
+            <StackLayout BackgroundColor="White" Orientation="Horizontal" Spacing="0">
+                <BoxView BackgroundColor="SeaGreen"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="Red" 
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="Gold"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="BlueViolet" 
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <AbsoluteLayout>
+                <Button Text="AbsoluteLayout"
+                AbsoluteLayout.LayoutFlags="None"
+                AbsoluteLayout.LayoutBounds="30,50,200,100">x,y,width, weight
+                </Button>
+                <Button Text="AbsoluteLayout"
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds=".5,.5,.5,.5">x,y,width, weight en % 0..1
+                </Button>
+
+                <Button BorderRadius="30"
+                HeightRequest="60"
+                WidthRequest="60"
+                BackgroundColor="Red"
+                AbsoluteLayout.LayoutFlags="None"
+                AbsoluteLayout.LayoutBounds="10,100,60,60"/>
+
+            </AbsoluteLayout>
+
+
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
